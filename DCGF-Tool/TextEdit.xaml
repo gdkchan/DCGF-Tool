@@ -1,0 +1,13 @@
+﻿<Window x:Class="TextEdit"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Editor de texto" Width="600" Height="400" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBox x:Name="TxtEdit" x:FieldModifier="public" Margin="0,24,0,0" TextWrapping="Wrap" HorizontalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Auto" AcceptsReturn="True"/>
+        <Menu Height="24" VerticalAlignment="Top" Margin="0,0,0,0">
+            <MenuItem x:Name="MnuSalva" Header="Salvar" Click="MenuItem_Click"/>
+            <MenuItem x:Name="MnuBusca" Header="Buscar"/>
+            <CheckBox x:Name="ChkAcentos" Content="Substituir caracteres acentuados" IsChecked="True" Click="Chk_Click"/>
+        </Menu>
+    </Grid>
+</Window>
